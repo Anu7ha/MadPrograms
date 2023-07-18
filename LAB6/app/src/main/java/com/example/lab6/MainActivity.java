@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                 {
                     String json = scanner.hasNext() ? scanner.next() : "";
                     JSONArray jsonArray = new JSONArray(json);
-                    stringBuilder.append("JSON DATA\n--------");
+                    stringBuilder.append("JSON DATA\n------------------");
                     for (int i = 0; i < jsonArray.length(); i++) {
                         JSONObject jsonObject = jsonArray.getJSONObject(i);
                         stringBuilder.append(String.format("\nName: %s\nLatitude: %s\nLongitude: %s\nTemperature: %s\nHumidity: %s\n----------",
